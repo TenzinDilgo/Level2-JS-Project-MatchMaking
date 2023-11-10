@@ -39,6 +39,7 @@ let example6 = true;
 let example7 = true;
 let example8 = true;
 let preid = -1;
+let sameImage = "";
 let presource = "blank.png";
 // let newImage = document.createElement('img');
 //          newImage.src = "example1.png";
@@ -67,9 +68,11 @@ for (let i=0; i < images.length; i++){
     newImage.src = "blank.png";
     images[i].replaceChildren(newImage);
     console.log[images[i].id];
+    
     images[i].addEventListener("click", (event, id) => {
         changeImage(event, images[i].id);
     });
+
 }
 }
 reset = () => {
@@ -89,6 +92,9 @@ reset = () => {
 }
 
 function changeImage(event, id){
+    if(sameImage != id){
+    sameImage=id;
+    
     console.log(bannedID);
     score++;
     let scoreee = document.getElementById("points");
@@ -182,5 +188,5 @@ function changeImage(event, id){
         //preid = -1;
     }
     event.target.src = source;
-
+    }
 }
