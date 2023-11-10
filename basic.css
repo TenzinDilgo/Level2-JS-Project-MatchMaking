@@ -54,14 +54,30 @@ p{
 }
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
     body {
         font-size: 14px;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 60px;
+    }
+
     body {
         font-size: 18px;
+    }
+
+    p {
+        font-size: 30px;
     }
 }
 
