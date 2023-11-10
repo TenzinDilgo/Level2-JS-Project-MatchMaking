@@ -90,6 +90,20 @@ reset = () => {
       }, delayInMilliseconds);
    
 }
+resettt = () => {
+   
+       score = 0;
+        for (let i=0; i < images.length; i++){
+            
+            let newImage = document.createElement('img');
+            newImage.src = "blank.png";
+            images[i].replaceChildren(newImage);
+            
+        }
+       
+        let scoreee = document.getElementById("points");
+        scoreee.innerText = `Points: ${score}`;
+}
 
 function changeImage(event, id){
     if(sameImage != id){
