@@ -198,7 +198,7 @@ function changeImage(event, id){
     if(count > 1){
         reset();
         count = 0;
-        presource = "blank.png"
+        presource = "Hidden.png"
         //preid = -1;
     }
     event.target.src = source;
