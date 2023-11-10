@@ -40,7 +40,7 @@ let example7 = true;
 let example8 = true;
 let preid = -1;
 let sameImage = "";
-let presource = "blank.png";
+let presource = "Hidden.png";
 // let newImage = document.createElement('img');
 //          newImage.src = "example1.png";
 //          // Set attribute values for the image
@@ -65,7 +65,7 @@ initialize = () => {
 for (let i=0; i < images.length; i++){
     
     let newImage = document.createElement('img');
-    newImage.src = "blank.png";
+    newImage.src = "Hidden.png";
     images[i].replaceChildren(newImage);
     console.log[images[i].id];
     
@@ -82,7 +82,7 @@ reset = () => {
         for (let i=0; i < images.length; i++){
             if(!(bannedID.includes(i))){
             let newImage = document.createElement('img');
-            newImage.src = "blank.png";
+            newImage.src = "Hidden.png";
             images[i].replaceChildren(newImage);
             }
         }
@@ -96,7 +96,7 @@ resettt = () => {
         for (let i=0; i < images.length; i++){
             
             let newImage = document.createElement('img');
-            newImage.src = "blank.png";
+            newImage.src = "Hidden.png";
             images[i].replaceChildren(newImage);
             
         }
@@ -117,7 +117,7 @@ function changeImage(event, id){
     console.log(event.id)
     console.log(this.id)
     console.log(id);
-    let source = "blank.png";
+    let source = "Hidden.png";
     
     
     count++;
