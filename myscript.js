@@ -92,17 +92,7 @@ reset = () => {
 }
 resettt = () => {
    
-       score = 0;
-        for (let i=0; i < images.length; i++){
-            
-            let newImage = document.createElement('img');
-            newImage.src = "Hidden.png";
-            images[i].replaceChildren(newImage);
-            
-        }
-       
-        let scoreee = document.getElementById("points");
-        scoreee.innerText = `Points: ${score}`;
+    location.reload();
 }
 
 function changeImage(event, id){
