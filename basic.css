@@ -54,32 +54,17 @@ p{
 }
 
 
-/* Media query for small screens */
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
     }
-
-    h1 {
-        font-size: 30px; 
-    }
-
-    p {
-        font-size: 18px; 
-    }
-
-    .container {
-        grid-template-columns: repeat(2, 1fr); 
-    }
 }
 
-/* Media query for medium-sized screens */
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
     body {
-        font-size: 16px; 
+        font-size: 18px;
     }
 }
-
 
 img{
     height:100%;
